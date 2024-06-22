@@ -1,5 +1,12 @@
 # Hyeong Joon Suh Personal Website
+## How to deploy changes
+```
+# Configure AWS credentials for authentication. Need access key ID and secret access key, created in IAM
+aws configure
 
+# At the root of repository
+aws s3 sync . s3://hyeongjoonsuh.com --delete
+```
 
 ## Copyright and License
 
